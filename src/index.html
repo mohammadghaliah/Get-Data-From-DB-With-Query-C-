@@ -1,0 +1,11 @@
+<p>Get Data From DB With Query C#</p>
+
+<!-- string query = $"SELECT USR.* FROM USERS USR " +
+$"JOIN USER_PROFILES USR_PRF ON USR.USER_ID = USR_PRF.OBJECT_ID AND USR.ACCOUNT_ID = USR_PRF.ACCOUNT_ID AND USR_PRF.OBJECT_TYPE = '{EntityType.Account}' " +
+$"WHERE JSON_VALUE(LOWER(USR_PRF.DATA), '$.{customDataAttribute.ToLower()}') = '{value.ToLower()}' AND " +
+$"USR.ACCOUNT_ID = {accountId} AND USR.IS_DELETED = 0 AND USR_PRF.IS_DELETED = 0";
+
+User user = await Context.User.FromSqlRaw(query).FirstOrDefaultAsync();
+user = FillUserDetails(user);
+
+return user; -->
